@@ -1,7 +1,10 @@
 import Image from "next/image";
 
 export default async function Home() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+  const res = await fetch("http://127.0.0.1:8000/api/external-data/", {
+    cache: "no-store",
+  });
+  
   let posts;
   if(res.status === 200){
     posts = await res.json();

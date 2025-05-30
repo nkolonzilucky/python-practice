@@ -1,0 +1,14 @@
+{
+  "name": "python-practice",
+  "version": "1.0.0",
+  "description": "Python 3 practice",
+  "main": "script.js",
+  "scripts": {
+    "dev": "tsc script.ts && node script.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.8.3"
+  }
+}
